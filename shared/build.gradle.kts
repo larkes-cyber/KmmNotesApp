@@ -35,6 +35,7 @@ kotlin {
                 implementation("com.squareup.sqldelight:android-driver:1.5.3")
             }
         }
+
         val androidTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
@@ -44,6 +45,9 @@ kotlin {
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
+            dependencies{
+                implementation("com.squareup.sqldelight:native-driver:1.5.3")
+            }
         }
         val iosX64Test by getting
         val iosArm64Test by getting
@@ -71,4 +75,7 @@ android {
         minSdk = 21
         targetSdk = 32
     }
+}
+dependencies {
+    implementation("com.android.support:support-annotations:28.0.0")
 }
