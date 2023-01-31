@@ -12,5 +12,8 @@ data class Note(
 ){
     companion object{
         private val colors = listOf(RedOrangeHex, RedPinkHex, BabyBlueHex, VioletHex, LightGreenHex)
+        fun generateRandom():Long{
+            return colors.random()
+        }
     }
 }

@@ -15,7 +15,7 @@ class SqlDelightNoteDataSource(
 
     override suspend fun insertNote(note: Note) {
         queries.insertNote(
-            id = note.id!!,
+            id = note.id,
             title = note.title,
             content = note.content,
             colorHex = note.colorHex,
