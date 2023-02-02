@@ -29,14 +29,15 @@ fun NoteItemComponent(
     note:Note,
     deleteCallback:(Long) -> Unit,
     noteClickCallback:() -> Unit,
-    background:Color
+    background:Color,
+    modifier: Modifier = Modifier
 ) {
 
     val formattedDate = remember{
         DateTimeUntil.formatNoteDate(note.created)
     }
     Card(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth(),
         shape = RoundedCornerShape(4.dp),
         onClick = {

@@ -2,7 +2,6 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     id("com.squareup.sqldelight")
-    id ("kotlin-android-extensions")
 }
 
 kotlin {
@@ -41,13 +40,13 @@ kotlin {
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
         val iosMain by creating {
+            dependencies {
+                implementation("com.squareup.sqldelight:native-driver:1.5.3")
+            }
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
-            dependencies{
-                implementation("com.squareup.sqldelight:native-driver:1.5.3")
-            }
         }
         val iosX64Test by getting
         val iosArm64Test by getting

@@ -3,6 +3,7 @@ package com.example.noteappkmm.android.note_list
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -26,6 +27,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun NoteListScreen(
     viewModel:NoteListViewMode = hiltViewModel(),
@@ -85,7 +87,7 @@ fun NoteListScreen(
             }
             LazyColumn(
                 modifier = Modifier.weight(1f).padding(horizontal = 15.dp),
-                verticalArrangement = Arrangement.spacedBy(35.dp)
+                verticalArrangement = Arrangement.spacedBy(27.dp)
             ) {
                 items(
                     items = state.notes,
@@ -100,6 +102,7 @@ fun NoteListScreen(
                             navController.navigate("note_detail/${it.id}")
                         },
                         background = Color(it.colorHex),
+                        modifier = Modifier.animateItemPlacement()
                     )
                 }
             }
