@@ -9,8 +9,8 @@ class UseSearchNotes {
         if(query.isBlank())return notes
 
         return notes.filter {
-            it.title.trim().lowercase().contains(query)
-                    || it.content.trim().lowercase().contains(query)
+            it.title.trim().lowercase().contains(query.lowercase()) ||
+                    it.content.trim().lowercase().contains(query.lowercase())
         }.sortedBy {
             DateTimeUntil.toEpochMillis(it.created)
         }

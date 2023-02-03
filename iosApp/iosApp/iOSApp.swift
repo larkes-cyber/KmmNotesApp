@@ -7,7 +7,9 @@ struct iOSApp: App {
     
 	var body: some Scene {
 		WindowGroup {
-            NotelListScreen(noteDataSource: databaseModule.noteDataSource)
+            NavigationView(){
+                NoteListScreen(noteDataSource: databaseModule.noteDataSource) 
+            }
 		}
 	}
 }

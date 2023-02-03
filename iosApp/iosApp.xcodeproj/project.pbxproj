@@ -17,6 +17,7 @@
 		FA62DE00298C30EF00566B2F /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DDFF298C30EF00566B2F /* NoteItem.swift */; };
 		FA62DE02298C33C100566B2F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DE01298C33C100566B2F /* Colors.swift */; };
 		FA62DE05298C3A6F00566B2F /* NoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DE04298C3A6F00566B2F /* NoteDetailScreen.swift */; };
+		FA62DE07298D152700566B2F /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DE06298D152700566B2F /* NoteDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		FA62DDFF298C30EF00566B2F /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		FA62DE01298C33C100566B2F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FA62DE04298C3A6F00566B2F /* NoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreen.swift; sourceTree = "<group>"; };
+		FA62DE06298D152700566B2F /* NoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				FA62DE04298C3A6F00566B2F /* NoteDetailScreen.swift */,
+				FA62DE06298D152700566B2F /* NoteDetailViewModel.swift */,
 			);
 			path = note_detail_screen;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				FA62DE05298C3A6F00566B2F /* NoteDetailScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				FA62DE02298C33C100566B2F /* Colors.swift in Sources */,
+				FA62DE07298D152700566B2F /* NoteDetailViewModel.swift in Sources */,
 				FA62DDFC298C227200566B2F /* NotelListScreen.swift in Sources */,
 				FA0CDA03298AD2DA00ABB136 /* NoteListViewModel.swift in Sources */,
 				FA62DDFE298C2A0C00566B2F /* HideableSearchTextField.swift in Sources */,

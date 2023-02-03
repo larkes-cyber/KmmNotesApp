@@ -1,4 +1,4 @@
-package com.example.noteappkmm.data.di
+package com.example.noteappkmm.di
 
 import com.example.noteappkmm.data.local.DatabaseDriverFactory
 import com.example.noteappkmm.data.note.SqlDelightNoteDataSource
